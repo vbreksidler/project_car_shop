@@ -26,12 +26,12 @@ class MotosController {
     const { model, year, color, buyValue, category, engineCapacity } = req.body;
     const moto = { model, year, color, buyValue, category, engineCapacity };
     const motoUptaded = await this._service.update(req.params.id, moto);
-    return res.status(200).json (motoUptaded);
+    return res.status(200).json(motoUptaded);
   }
 
   public async delete(req: Request, res: Response) {
     const motoDeleted = await this._service.delete(req.params.id);
-    return res.status(204).json (motoDeleted);
+    return res.status(204).json(motoDeleted);
   }
 }
 

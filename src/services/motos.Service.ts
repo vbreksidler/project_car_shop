@@ -1,8 +1,7 @@
 import { IService } from '../interfaces/IService';
 import { IModel } from '../interfaces/IModel';
 import { ErrorTypes } from '../errors/catalog';
-import { IMotorcycle } from '../interfaces/IMotorcycle';
-import { IMotoZodSchema } from '../interfaces/IMotorcycle'
+import { IMotorcycle, IMotoZodSchema } from '../interfaces/IMotorcycle';
 
 class MotosService implements IService<IMotorcycle> {
   constructor(private _moto: IModel<IMotorcycle>) { }
